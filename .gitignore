@@ -1,0 +1,13 @@
+# macOS Özel Dosyaları
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# VS Code / IDE Kalıntıları
+.vscode/
+.idea/
+
+# İşletim Sistemi Çöpleri
+Thumbs.db
+ehthumbs.db
+Desktop.ini

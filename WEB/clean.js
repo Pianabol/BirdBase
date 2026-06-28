@@ -117,7 +117,8 @@ analyzeBtn.addEventListener("click", async () => {
 
     let data;
     try {
-        const response = await fetch("http://127.0.0.1:8000/predict", {
+        // YENİ HALİ: 127.0.0.1 silindi, direkt endpoint'e gidiyor.
+        const response = await fetch("/predict", {
             method: "POST",
             body: formData
         });
@@ -156,7 +157,8 @@ analyzeBtn.addEventListener("click", async () => {
     }
 
     // ---- DETECTION FOUND ----
-    detectedImg.src = "http://127.0.0.1:8000" + data.output_image;
+    // YENİ HALİ: Localhost URL eklentisi kaldırıldı, doğrudan sunucudaki yolu alıyor.
+    detectedImg.src = data.output_image;
     lastDetectedBird = data.detections[0].class; 
 
     // O eski forEach döngüsünü uçurduk. Yerine Python'dan gelen hazır mesajı tek satırda basıyoruz.
@@ -263,7 +265,8 @@ async function sendMessage() {
     chatBox.scrollTop = chatBox.scrollHeight;
 
     try {
-        const response = await fetch("http://127.0.0.1:8000/chat", {
+        // YENİ HALİ: 127.0.0.1 silindi, direkt endpoint'e gidiyor.
+        const response = await fetch("/chat", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

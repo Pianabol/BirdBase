@@ -11,15 +11,13 @@
 
     <header class="app-header">
         <div class="logo">
-            <h2>
-                <a href="index.html" style="color:white; text-decoration:none;">BirdBase</a>
-            </h2>
+            <h2><a href="index.html" style="color:white; text-decoration:none;">BirdBase</a></h2>
         </div>
         
         <nav class="top-nav">
             <a href="explore.html">Explore</a>
-            <a href="our-vision.html">Our Vision</a>
-            <a href="about-us.html">About Us</a>
+            <a href="vision.html">Our Vision</a>
+            <a href="about.html">About Us</a>
         </nav>
 
         <div class="mobile-promo" onclick="window.open('https://drive.google.com/drive/home', '_blank')">
@@ -43,14 +41,14 @@
                         <label for="file-upload" class="btn btn-grey">Choose Photo</label>
                         <input id="file-upload" type="file" accept="image/*" required />
                         
-                        <button id="analyze-btn" type="button" class="btn btn-green">Analyze</button>
+                        <button id="analyze-btn" class="btn btn-green">Analyze</button>
                     </div>
                     
-                    <button id="chatbot-btn" type="button" class="btn btn-green full-width">Chatbot</button>
+                    <button id="chatbot-btn" class="btn btn-green full-width">Chatbot</button>
                 </div>
 
                 <div id="preview-box">
-                    <img id="preview-image" alt="Preview">
+                    <img id="preview-image" src="" alt="Preview">
                     <p id="preview-name"></p>
                 </div>
             </div>
@@ -64,7 +62,7 @@
             <div class="card-content">
                 <h1>Detected Bird</h1>
 
-                <img id="detected-image" class="detected-image" alt="Detected Image">
+                <img id="detected-image" class="detected-image" src="" alt="Detected Image">
 
                 <ul id="det-list" class="det-list"></ul>
 
@@ -75,13 +73,8 @@
                     <p id="info-desc"></p>
                 </div>
 
-                <button id="back-btn" type="button" class="btn btn-grey full-width" style="margin-top: 15px;">
-                    Analyze Another Bird
-                </button>
-
-                <button id="ask-expert-btn" type="button" class="btn btn-green full-width" style="margin-top: 10px;">
-                    Ask Avian Expert
-                </button>
+                <button id="back-btn" class="btn btn-grey full-width" style="margin-top: 15px;">Analyze Another Bird</button>
+                <button id="ask-expert-btn" class="btn btn-green full-width" style="margin-top: 10px;">Ask Avian Expert</button>
             </div>
         </div>
 
@@ -99,12 +92,10 @@
 
                 <div class="chat-input-area">
                     <input type="text" id="chat-input" placeholder="Ask something..." autocomplete="off" />
-                    <button id="chat-send-btn" type="button" class="btn btn-green">Send</button>
+                    <button id="chat-send-btn" class="btn btn-green">Send</button>
                 </div>
 
-                <button id="chat-back-btn" type="button" class="btn btn-grey full-width" style="margin-top: 15px;">
-                    Back to Analysis
-                </button>
+                <button id="chat-back-btn" class="btn btn-grey full-width" style="margin-top: 15px;">Back to Analysis</button>
             </div>
         </div>
 

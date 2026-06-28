@@ -1,7 +1,7 @@
 from google import genai
 
 # Kendi API anahtarın
-client = genai.Client(api_key="AIzaSyDidc4lzfZWWtLb2Lz7HnjK6bQzrupSDas")
+client = genai.Client(api_key="YOUR_API_KEY") 
 
 print("Senin API anahtarınla çalışan modeller taranıyor...\n")
 
