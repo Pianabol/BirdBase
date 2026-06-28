@@ -1,0 +1,26 @@
+{
+  "bald eagle": {
+    "name": "Kel Kartal",
+    "habitat": "Geniş göller, büyük nehirler ve kıyı şeritleri",
+    "lifespan": "20-30 Yıl",
+    "description": "Kuzey Amerika'ya özgü, devasa kanat açıklığına ve karakteristik beyaz başa sahip efsanevi bir yırtıcı kuştur. Balık avlamakta ustadır."
+  },
+  "blue jay": {
+    "name": "Mavi Alakarga",
+    "habitat": "Meşe ve çam ormanları, şehir parkları, bahçeler",
+    "lifespan": "7 Yıl",
+    "description": "Sırtındaki parlak mavi tüyleri ve başındaki belirgin ibiği ile tanınır. Çok gürültücü, taklitçi ve meşe palamudu saklamasıyla ünlü zeki bir kuştur."
+  },
+  "rock pigeon": {
+    "name": "Kaya Güvercini",
+    "habitat": "Şehir merkezleri, beton binalar, köprü altları ve kayalık uçurumlar",
+    "lifespan": "3-5 Yıl (Doğada)",
+    "description": "Dünya genelinde şehir hayatına en iyi uyum sağlamış kuş türüdür. Boynunda yanardöner yeşil-mor tüyler bulunur ve mükemmel yön bulma yeteneğine sahiptir."
+  },
+  "house sparrow": {
+    "name": "Bayağı Serçe",
+    "habitat": "İnsan yerleşimlerinin olduğu her yer (Şehirler, köyler, tarlalar)",
+    "lifespan": "3 Yıl",
+    "description": "Küçük boyutlu, kahverengi-gri tonlarında ve oldukça sosyal bir kuştur. İnsan yapılarındaki oyuklara yuva yapmayı sever ve sürüler halinde yaşar."
+  }
+}

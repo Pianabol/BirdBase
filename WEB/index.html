@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BirdBase – Avian Science Assistant</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="page-main">
+
+    <header class="app-header">
+        <div class="logo">
+            <h2>
+                <a href="index.html" style="color:white; text-decoration:none;">BirdBase</a>
+            </h2>
+        </div>
+        
+        <nav class="top-nav">
+            <a href="explore.html">Explore</a>
+            <a href="our-vision.html">Our Vision</a>
+            <a href="about-us.html">About Us</a>
+        </nav>
+
+        <div class="mobile-promo" onclick="window.open('https://drive.google.com/drive/home', '_blank')">
+            Try our new Mobile App!
+        </div>
+    </header>
+
+    <main class="main-content">
+        
+        <div id="upload-screen" class="container screen fade-in">
+            <div class="card-banner">
+                Discover the birds around you!
+            </div>
+            
+            <div class="card-content">
+                <h1>Analyze</h1>
+                <p class="subtitle">Upload an image to detect birds</p>
+
+                <div class="action-buttons">
+                    <div class="top-buttons">
+                        <label for="file-upload" class="btn btn-grey">Choose Photo</label>
+                        <input id="file-upload" type="file" accept="image/*" required />
+                        
+                        <button id="analyze-btn" type="button" class="btn btn-green">Analyze</button>
+                    </div>
+                    
+                    <button id="chatbot-btn" type="button" class="btn btn-green full-width">Chatbot</button>
+                </div>
+
+                <div id="preview-box">
+                    <img id="preview-image" alt="Preview">
+                    <p id="preview-name"></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="result-screen" class="container screen" style="display:none;">
+            <div class="card-banner">
+                Analysis Result
+            </div>
+            
+            <div class="card-content">
+                <h1>Detected Bird</h1>
+
+                <img id="detected-image" class="detected-image" alt="Detected Image">
+
+                <ul id="det-list" class="det-list"></ul>
+
+                <div id="info-card" class="info-card" style="display:none;">
+                    <h3 id="info-name"></h3>
+                    <p><strong>Habitat:</strong> <span id="info-habitat"></span></p>
+                    <p><strong>Lifespan:</strong> <span id="info-lifespan"></span></p>
+                    <p id="info-desc"></p>
+                </div>
+
+                <button id="back-btn" type="button" class="btn btn-grey full-width" style="margin-top: 15px;">
+                    Analyze Another Bird
+                </button>
+
+                <button id="ask-expert-btn" type="button" class="btn btn-green full-width" style="margin-top: 10px;">
+                    Ask Avian Expert
+                </button>
+            </div>
+        </div>
+
+        <div id="chat-screen" class="container screen" style="display:none;">
+            <div class="card-banner">
+                Avian Science Assistant
+            </div>
+            
+            <div class="card-content">
+                <div id="chat-box" class="chat-box">
+                    <div class="chat-message msg-bot">
+                        Hello! I am your Avian Science Assistant. You can ask me anything about birds.
+                    </div>
+                </div>
+
+                <div class="chat-input-area">
+                    <input type="text" id="chat-input" placeholder="Ask something..." autocomplete="off" />
+                    <button id="chat-send-btn" type="button" class="btn btn-green">Send</button>
+                </div>
+
+                <button id="chat-back-btn" type="button" class="btn btn-grey full-width" style="margin-top: 15px;">
+                    Back to Analysis
+                </button>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="app-footer">
+        <p>&copy; 2026 BirdBase Assistant. All rights reserved.</p>
+    </footer>
+
+    <script src="clean.js"></script>
+
+</body>
+</html>

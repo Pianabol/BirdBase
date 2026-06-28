@@ -1,0 +1,16 @@
+# Flutter/Dart kalıntıları
+.dart_tool/
+.packages
+build/
+.pub-cache/
+.pub/
+
+# Android/iOS
+android/.gradle/
+android/app/build/
+ios/build/
+ios/Pods/
+ios/.symlinks/
+
+# macOS
+.DS_Store

@@ -1,0 +1,13 @@
+# Python kalıntıları
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Sanal ortam
+venv/
+env/
+.env
+
+# Model cache'leri (Eğer varsa)
+runs/
+.DS_Store

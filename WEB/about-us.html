@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - BirdBase</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        /* İki profili yan yana dizmek ve mobilde alt alta almak için özel stil */
+        .profile-container {
+            display: flex;
+            gap: 30px;
+            margin-top: 25px;
+        }
+        .profile-item {
+            flex: 1;
+        }
+        /* Ekran 768px'den küçükse (Telefonlar) yan yana yerine alt alta geç */
+        @media (max-width: 768px) {
+            .profile-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body class="page-about">
+
+    <header class="app-header">
+        <div class="logo">
+            <h2><a href="index.html" style="color:white; text-decoration:none;">BirdBase</a></h2>
+        </div>
+        
+        <nav class="top-nav">
+            <a href="explore.html">Explore</a>
+            <a href="our-vision.html">Our Vision</a>
+            <a href="about-us.html" style="color: white; border-bottom: 2px solid white; padding-bottom: 5px;">About Us</a>
+        </nav>
+
+        <div class="mobile-promo" onclick="window.open('https://drive.google.com/drive/home', '_blank')">
+            Try our new Mobile App!
+        </div>
+    </header>
+
+    <main class="main-content">
+        
+        <!-- Kutuyu X ekseninde büyütmek için max-width: 850px eklendi -->
+        <div class="container screen fade-in" style="display:block; max-width: 850px; width: 90%;">
+            <div class="card-banner">
+                About Us
+            </div>
+            
+            <div class="card-content" style="max-height: 70vh; overflow-y: auto; text-align: left; padding: 30px;">
+                
+                <h1 style="color: #2D4739; font-size: 24px; margin-bottom: 15px; text-align: center;">The Minds Behind BirdBase</h1>
+                
+                <p style="line-height: 1.6; color: #555; font-size: 15px; margin-bottom: 25px; text-align: center;">
+                    BirdBase is a visionary project brought to life by two young engineering students with a dream of uniting the unique beauties of nature with modern technology.
+                </p>
+
+                <!-- Vurgulu TÜBİTAK Sözü/Kutusu -->
+                <div style="background-color: #f4f9f5; border-left: 4px solid #2D4739; padding: 20px; border-radius: 6px; margin-bottom: 20px;">
+                    <h3 style="color: #2D4739; font-size: 16px; margin-bottom: 10px; margin-top: 0;">Proudly Supported by TÜBİTAK 2209-A</h3>
+                    <p style="color: #444; font-size: 14px; line-height: 1.6; margin: 0;">
+                        On this journey of innovation, the duo proved the potential of their idea and earned official backing under the <strong>TÜBİTAK 2209-A University Students Research Projects Support Program</strong>. With the support of science and national research institutions behind them, these two young engineers continue their work without slowing down, striving to turn their idea from a mere project into a flawless reality available for everyone.
+                    </p>
+                </div>
+
+                <!-- Yan Yana Profiller (Flexbox) -->
+                <div class="profile-container">
+                    
+                    <!-- Furkan Tuç -->
+                    <div class="profile-item">
+                        <h3 style="color: #3A5A46; font-size: 18px; margin-bottom: 10px; border-bottom: 1px solid #ddd; padding-bottom: 5px;">Furkan Tuç</h3>
+                        <p style="line-height: 1.6; color: #555; font-size: 14px; margin-bottom: 0;">
+                            A senior engineering student who develops dynamic games in the hyper and hybrid casual genres within the mobile gaming industry. Specializing in game engines like Unity and Unreal Engine, as well as programming languages such as C++, C#, Java, and Python. Furkan focuses on how artificial intelligence and image processing technologies can be integrated to solve everyday problems. He leads the BirdBase project to use his technical expertise for the benefit of people and nature.
+                        </p>
+                    </div>
+
+                    <!-- Nisa Doğa Yücel -->
+                    <div class="profile-item">
+                        <h3 style="color: #3A5A46; font-size: 18px; margin-bottom: 10px; border-bottom: 1px solid #ddd; padding-bottom: 5px;">Nisa Doğa Yücel</h3>
+                        <p style="line-height: 1.6; color: #555; font-size: 14px; margin-bottom: 0;">
+                            A senior Computer Engineering student determinedly advancing towards becoming a senior Data Scientist and Machine Learning expert. She blends her engineering skills in C++ and Python with modern relational database management systems (RDBMS) and data mining principles. Doğa has made vital contributions to the project by rolling up her sleeves to flawlessly construct the massive dataset at the heart of BirdBase and personally train the advanced AI object detection models.
+                        </p>
+                    </div>
+
+                </div>
+                
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="app-footer">
+        <p>&copy; 2026 BirdBase Assistant. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore - BirdBase</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body class="page-explore">
+
+    <header class="app-header">
+        <div class="logo">
+            <h2><a href="index.html" style="color:white; text-decoration:none;">BirdBase</a></h2>
+        </div>
+        
+        <nav class="top-nav">
+            <a href="explore.html" style="color: white; border-bottom: 2px solid white; padding-bottom: 5px;">Explore</a>
+            <a href="our-vision.html">Our Vision</a>
+            <a href="about-us.html">About Us</a>
+        </nav>
+
+        <div class="mobile-promo" onclick="window.open('https://drive.google.com/drive/home', '_blank')">
+            Try our new Mobile App!
+        </div>
+    </header>
+
+    <main class="main-content">
+        
+        <div id="explore-screen" class="container screen fade-in" style="display:block;">
+            <div class="card-banner">
+                Explore the Avian World
+            </div>
+            <div class="card-content">
+                <h1>Geographic Biomes</h1>
+                <p class="subtitle" style="margin-bottom: 25px;">Discover how birds adapt to different environments around the globe.</p>
+                
+                <div class="explore-grid">
+                    
+                    <div class="explore-card biome-card" 
+                         data-title="Tropical Rainforests" 
+                         data-img="imagesApp/tropical_rainforests.jpg"
+                         data-desc="The Amazon and Congo basins represent the world's most vibrant ecosystems. Birds here have evolved highly vibrant plumage and incredibly loud calls to communicate through the dense, dark canopy of the jungle. Survival here means standing out or blending in perfectly."
+                         data-birds="Macaws, Toucans, Birds of Paradise, Harpy Eagle, Hoatzin">
+                        <img src="imagesApp/tropical_rainforests.jpg" alt="Tropical Rainforests">
+                        <div class="explore-card-overlay">Tropical Rainforests</div>
+                    </div>
+
+                    <div class="explore-card biome-card" 
+                         data-title="Deserts & Savannas" 
+                         data-img="imagesApp/desert_savanna.jpg"
+                         data-desc="Scorching heat, scarce water, and open grasslands have forced these birds to adapt in extreme ways. Many are ground-dwelling, capable of high-speed running, or specialized in scavenging. The ostrich, the world's largest flightless bird, is the undisputed king of these plains."
+                         data-birds="Ostrich, Vultures, Emus, Secretary Bird, Sandgrouse">
+                        <img src="imagesApp/desert_savanna.jpg" alt="Deserts & Savannas">
+                        <div class="explore-card-overlay">Deserts & Savannas</div>
+                    </div>
+
+                    <div class="explore-card biome-card" 
+                         data-title="Polar & Freezing Peaks" 
+                         data-img="imagesApp/polar_freezing.jpg"
+                         data-desc="Life in the most unforgiving conditions on Earth. Birds in Antarctica or atop high mountains like the Andes survive using thick layers of insulating fat, dense water-resistant feathers, or massive wingspans to effortlessly ride freezing thermal currents."
+                         data-birds="Emperor Penguin, Andean Condor, Snow Petrel, Arctic Tern">
+                        <img src="imagesApp/polar_freezing.jpg" alt="Polar & Freezing Peaks">
+                        <div class="explore-card-overlay">Polar & Freezing Peaks</div>
+                    </div>
+
+                    <div class="explore-card biome-card" 
+                         data-title="Vast Oceans" 
+                         data-img="imagesApp/vast_oceans.jpg"
+                         data-desc="Master navigators of the endless blue. Pelagic (open ocean) birds can spend months or even years flying over the sea without ever touching land. They are uniquely adapted with specialized glands to drink and filter pure saltwater."
+                         data-birds="Albatross, Seagulls, Pelicans, Puffins, Frigatebirds">
+                        <img src="imagesApp/vast_oceans.jpg" alt="Vast Oceans">
+                        <div class="explore-card-overlay">Vast Oceans</div>
+                    </div>
+
+                    <div class="explore-card biome-card" 
+                         data-title="Concrete Jungles" 
+                         data-img="imagesApp/concrete_jungle.jpg"
+                         data-desc="The newest and most rapidly expanding biome on Earth. These highly intelligent and remarkably adaptable birds have learned to thrive alongside human civilization, utilizing concrete structures for nesting and safely consuming human byproducts."
+                         data-birds="Rock Pigeon, House Sparrow, American Crow, Blue Jay, European Starling">
+                        <img src="imagesApp/concrete_jungle.jpg" alt="Concrete Jungles">
+                        <div class="explore-card-overlay">Concrete Jungles</div>
+                    </div>
+
+                    <div class="explore-card biome-card" 
+                         data-title="Lakes & Wetlands" 
+                         data-img="imagesApp/lakes_wetlands.jpg"
+                         data-desc="The crucial zones where water meets land. Birds in these habitats are specialized fishers and waders. They are equipped with elongated legs to navigate shallow muddy waters and highly unique beak shapes designed to filter silt or spear fast-moving fish."
+                         data-birds="Flamingos, Herons, Kingfishers, Bald Eagle, Mallard Duck">
+                        <img src="imagesApp/lakes_wetlands.jpg" alt="Lakes & Wetlands">
+                        <div class="explore-card-overlay">Lakes & Wetlands</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="explore-detail-screen" class="container screen" style="display:none;">
+            <div class="explore-detail-header" id="detail-header">
+                <button id="explore-back-btn" class="detail-back-btn">⬅ Go Back</button>
+                <h1 id="detail-title">Biome Name</h1>
+            </div>
+            <div class="card-content" style="padding-top: 20px;">
+                <h3 style="color: #2D4739; margin-bottom: 10px;">About the Biome</h3>
+                <p id="detail-desc" style="line-height: 1.6; color: #555; margin-bottom: 20px;"></p>
+                
+                <h3 style="color: #2D4739; margin-bottom: 10px;">Featured Birds</h3>
+                <p id="detail-birds" style="font-weight: bold; color: #627264;"></p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="app-footer">
+        <p>&copy; 2026 BirdBase Assistant. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const exploreScreen = document.getElementById("explore-screen");
+        const exploreDetailScreen = document.getElementById("explore-detail-screen");
+        const detailHeader = document.getElementById("detail-header");
+        const detailTitle = document.getElementById("detail-title");
+        const detailDesc = document.getElementById("detail-desc");
+        const detailBirds = document.getElementById("detail-birds");
+        const backBtn = document.getElementById("explore-back-btn");
+
+        // Tüm kartları bul ve tıklama özelliği ekle
+        document.querySelectorAll('.biome-card').forEach(card => {
+            card.addEventListener('click', function() {
+                // HTML içine gömdüğümüz "data-" bilgilerini al
+                const title = this.getAttribute('data-title');
+                const img = this.getAttribute('data-img');
+                const desc = this.getAttribute('data-desc');
+                const birds = this.getAttribute('data-birds');
+
+                // Detay ekranını doldur
+                detailHeader.style.backgroundImage = `url('${img}')`;
+                detailTitle.textContent = title;
+                detailDesc.textContent = desc;
+                detailBirds.textContent = birds;
+
+                // Animasyonlu Geçiş (Modalı Aç)
+                exploreScreen.style.display = "none";
+                exploreScreen.classList.remove("fade-in");
+                exploreDetailScreen.style.display = "block";
+                exploreDetailScreen.classList.add("fade-in");
+            });
+        });
+
+        // Geri Dön Butonu
+        backBtn.addEventListener("click", () => {
+            exploreDetailScreen.style.display = "none";
+            exploreDetailScreen.classList.remove("fade-in");
+            exploreScreen.style.display = "block";
+            exploreScreen.classList.add("fade-in");
+        });
+    </script>
+</body>
+</html>

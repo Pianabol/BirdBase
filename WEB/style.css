@@ -1,0 +1,523 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+:root {
+    --forest-green: #2E5C3A; 
+    --forest-green-hover: #244a2e;
+    --grey-footer: #424242;
+    --grey-btn: #757575;
+    --grey-btn-hover: #5c5c5c;
+    --text-light: #F9F7F1;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Sayfalara özel arka planlar */
+.page-main {
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url('images/BackgroundMain.jpg');
+}
+
+.page-about {
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url('images/AboutUs.jpg');
+}
+
+.page-vision {
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url('images/OurVision.jpg');
+}
+
+.page-explore {
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url('images/explore.jpg');
+}
+
+@media (max-width: 768px) {
+    body {
+        background-attachment: scroll;
+        background-size: cover;
+        background-position: center center;
+    }
+}
+/* HEADER & FOOTER */
+.app-header {
+    background-color: var(--forest-green);
+    color: var(--text-light);
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 15px 30px; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    z-index: 10;
+}
+
+.app-header h2 {
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* YENİ EKLENDİ: Masaüstü & Web Navigasyon Menüsü */
+.top-nav {
+    display: flex;
+    gap: 30px;
+}
+
+.top-nav a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.top-nav a:hover {
+    color: #FFFFFF;
+    transform: translateY(-2px);
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    padding: 2rem 0;
+}
+
+.app-footer {
+    background-color: var(--grey-footer);
+    color: #ccc;
+    text-align: center;
+    padding: 12px 20px;
+    font-size: 0.85rem;
+    z-index: 10;
+}
+
+/* KART TASARIMI (Container) */
+.screen {
+    opacity: 1;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.fade-in {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.container {
+    width: 100%;
+    max-width: 450px;
+    background: #ffffff;
+    margin: 0 20px;
+    text-align: center;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.85);
+    animation: fadeCard 0.5s ease-out;
+    overflow: hidden; 
+}
+
+.card-banner {
+    background-color: var(--forest-green);
+    color: var(--text-light);
+    padding: 16px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.card-content {
+    padding: 2rem;
+}
+
+@keyframes fadeCard {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+    margin: 0 0 0.5rem 0;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #222;
+}
+
+.subtitle {
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+#file-upload {
+    display: none;
+}
+
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.top-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 20px;
+    font-size: 1rem;
+    font-weight: 700; 
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.25s ease;
+    text-align: center;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.btn-grey {
+    background-color: var(--grey-btn);
+    flex: 1; 
+}
+
+.btn-grey:hover {
+    background-color: var(--grey-btn-hover);
+}
+
+.btn-green {
+    background-color: var(--forest-green);
+    flex: 1;
+}
+
+.btn-green:hover {
+    background-color: var(--forest-green-hover);
+}
+
+.full-width {
+    width: 100%;
+}
+
+#preview-box {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(0,0,0,0.04);
+    border-radius: 12px;
+    border: 1px solid rgba(0,0,0,0.1);
+    animation: fadeIn 0.3s ease-out;
+}
+
+#preview-image {
+    max-width: 100%;
+    max-height: 220px;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+#preview-name {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #222;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.96); }
+    to   { opacity: 1; transform: scale(1); }
+}
+
+.detected-image {
+    width: 100%;
+    border-radius: 12px;
+    margin: 15px 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.det-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    text-align: left;
+}
+
+.det-list li {
+    font-size: 16px;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    color: #333;
+    font-weight: 600;
+}
+
+.info-card {
+    margin-top: 18px;
+    padding: 18px;
+    background: #f4f6f8;
+    border-radius: 14px;
+    text-align: left;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    animation: fadeIn 0.3s ease-out;
+}
+
+.info-card h3 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--forest-green);
+}
+
+.info-card p {
+    margin: 6px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+#info-desc {
+    margin-top: 10px;
+    color: #555;
+    line-height: 1.5;
+}
+
+@media (max-width: 480px) {
+    .card-content {
+        padding: 1.5rem;
+    }
+}
+
+/* CHAT EKRANI STİLLERİ */
+.chat-box {
+    background: #f4f6f8;
+    border-radius: 12px;
+    padding: 15px;
+    height: 300px; 
+    overflow-y: auto;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.chat-box::-webkit-scrollbar { width: 6px; }
+.chat-box::-webkit-scrollbar-thumb { background-color: rgba(0,0,0,0.2); border-radius: 10px; }
+
+.chat-message {
+    max-width: 85%;
+    padding: 12px 16px;
+    border-radius: 14px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    word-wrap: break-word;
+    text-align: left;
+}
+
+.msg-user {
+    align-self: flex-end;
+    background-color: var(--forest-green);
+    color: white;
+    border-bottom-right-radius: 0;
+}
+
+.msg-bot {
+    align-self: flex-start;
+    background-color: #E8F0EA; 
+    color: #222;
+    border-bottom-left-radius: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.chat-input-area {
+    display: flex;
+    gap: 10px;
+}
+
+#chat-input {
+    flex: 1;
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+    transition: 0.2s;
+}
+
+#chat-input:focus {
+    border-color: var(--forest-green);
+}
+
+/* Sağ köşedeki tıklanabilir alanın tasarımı */
+.mobile-promo {
+    background-color: rgba(255, 255, 255, 0.15); 
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px; 
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+}
+
+.mobile-promo:hover {
+    background-color: rgba(255, 255, 255, 0.3); 
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+/* --- EXPLORE SCREEN YATAY KART LİSTESİ --- */
+.explore-grid {
+    display: flex;
+    flex-direction: column; /* Kartları alt alta dizer (Yatay görünüm) */
+    gap: 15px;
+    max-height: 50vh; /* Ekranı çok uzatmamak için sabit yükseklik */
+    overflow-y: auto; /* Kartlar sığmazsa şık bir kaydırma çubuğu ekler */
+    padding-right: 10px; /* Kaydırma çubuğu için sağdan pay */
+}
+
+/* Kaydırma çubuğunun şık görünmesi için */
+.explore-grid::-webkit-scrollbar { width: 6px; }
+.explore-grid::-webkit-scrollbar-thumb { background-color: rgba(45, 71, 57, 0.3); border-radius: 10px; }
+
+.explore-card {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    height: 100px; /* KARTIN YÜKSEKLİĞİ (Yatay şerit banner) */
+    min-height: 100px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.explore-card:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.explore-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.explore-card:hover img {
+    transform: scale(1.05); /* Hover olunca resim çok hafif yakınlaşır */
+}
+
+/* Resmin Üzerine Binen Yazı ve Karartı (Artık tam ortada) */
+.explore-card-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(45, 71, 57, 0.55); /* Forest Green Yarı Saydam */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    transition: background 0.3s ease;
+}
+
+.explore-card:hover .explore-card-overlay {
+    background: rgba(45, 71, 57, 0.35); /* Mouse gelince hafif aydınlanır */
+}
+
+/* --- EXPLORE DETAIL SCREEN (BÜYÜYEN DİV - MODAL) --- */
+
+/* Büyüyen div'in "Ne çok küçük ne çok büyük" olması için özel ayarlar */
+#explore-detail-screen.container {
+    max-width: 600px; /* Normal kartlardan (450px) biraz daha geniş */
+    max-height: 85vh; /* Üstten ve alttan kesinlikle arka planı gösterir */
+    overflow-y: auto; /* İçerik uzunsa sadece kendi içinde kayar */
+    padding: 0; /* İçerik boşluklarını alt div'lere bıraktık */
+}
+
+/* Detay ekranı kaydırma çubuğu */
+#explore-detail-screen::-webkit-scrollbar { width: 6px; }
+#explore-detail-screen::-webkit-scrollbar-thumb { background-color: rgba(45, 71, 57, 0.3); border-radius: 10px; }
+
+.explore-detail-header {
+    position: relative;
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+}
+
+/* Üst kısım koyu, alt kısım şeffaf gradient (Yazı okunsun diye) */
+.explore-detail-header::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.7));
+}
+
+.explore-detail-header h1 {
+    position: relative;
+    color: white;
+    margin: 0;
+    font-size: 26px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+.detail-back-btn {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255,255,255,0.4);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    backdrop-filter: blur(5px); 
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+
+.detail-back-btn:hover {
+    background: rgba(255, 255, 255, 0.9);
+    color: #2D4739;
+}

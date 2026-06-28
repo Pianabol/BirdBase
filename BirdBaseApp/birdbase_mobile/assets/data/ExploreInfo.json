@@ -1,0 +1,44 @@
+[
+  {
+    "id": "rainforests",
+    "title": "Tropical Rainforests",
+    "img": "assets/imagesApp/tropical_rainforests.jpg",
+    "desc": "The Amazon and Congo basins represent the world's most vibrant ecosystems. Birds here have evolved highly vibrant plumage and incredibly loud calls to communicate through the dense, dark canopy of the jungle. Survival here means standing out or blending in perfectly.",
+    "birds": "Macaws, Toucans, Birds of Paradise, Harpy Eagle, Hoatzin"
+  },
+  {
+    "id": "savannas",
+    "title": "Deserts & Savannas",
+    "img": "assets/imagesApp/desert_savanna.jpg",
+    "desc": "Scorching heat, scarce water, and open grasslands have forced these birds to adapt in extreme ways. Many are ground-dwelling, capable of high-speed running, or specialized in scavenging. The ostrich, the world's largest flightless bird, is the undisputed king of these plains.",
+    "birds": "Ostrich, Vultures, Emus, Secretary Bird, Sandgrouse"
+  },
+  {
+    "id": "polar",
+    "title": "Polar & Freezing Peaks",
+    "img": "assets/imagesApp/polar_freezing.jpg",
+    "desc": "Life in the most unforgiving conditions on Earth. Birds in Antarctica or atop high mountains like the Andes survive using thick layers of insulating fat, dense water-resistant feathers, or massive wingspans to effortlessly ride freezing thermal currents.",
+    "birds": "Emperor Penguin, Andean Condor, Snow Petrel, Arctic Tern"
+  },
+  {
+    "id": "oceans",
+    "title": "Vast Oceans",
+    "img": "assets/imagesApp/vast_oceans.jpg",
+    "desc": "Master navigators of the endless blue. Pelagic (open ocean) birds can spend months or even years flying over the sea without ever touching land. They are uniquely adapted with specialized glands to drink and filter pure saltwater.",
+    "birds": "Albatross, Seagulls, Pelicans, Puffins, Frigatebirds"
+  },
+  {
+    "id": "cities",
+    "title": "Concrete Jungles",
+    "img": "assets/imagesApp/concrete_jungle.jpg",
+    "desc": "The newest and most rapidly expanding biome on Earth. These highly intelligent and remarkably adaptable birds have learned to thrive alongside human civilization, utilizing concrete structures for nesting and safely consuming human byproducts.",
+    "birds": "Rock Pigeon, House Sparrow, American Crow, Blue Jay, European Starling"
+  },
+  {
+    "id": "wetlands",
+    "title": "Lakes & Wetlands",
+    "img": "assets/imagesApp/lakes_wetlands.jpg",
+    "desc": "The crucial zones where water meets land. Birds in these habitats are specialized fishers and waders. They are equipped with elongated legs to navigate shallow muddy waters and highly unique beak shapes designed to filter silt or spear fast-moving fish.",
+    "birds": "Flamingos, Herons, Kingfishers, Bald Eagle, Mallard Duck"
+  }
+]
