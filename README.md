@@ -19,15 +19,15 @@ BirdBase is an advanced, end-to-end avian species detection and consultation pla
 ## Interface Previews
 
 <div align="center">
-  <img src="assets/App1.png" alt="BirdBase Mobile App 1" width="24%">
-  <img src="assets/App2.png" alt="BirdBase Mobile App 2" width="24%">
-  <img src="assets/App3.png" alt="BirdBase Mobile App 3" width="24%">
-  <img src="assets/App4.png" alt="BirdBase Mobile App 4" width="24%">
+  <img src="Assets/App1.png" alt="BirdBase Mobile App 1" width="24%">
+  <img src="Assets/App2.png" alt="BirdBase Mobile App 2" width="24%">
+  <img src="Assets/App3.png" alt="BirdBase Mobile App 3" width="24%">
+  <img src="Assets/App4.png" alt="BirdBase Mobile App 4" width="24%">
 </div>
 <br>
 <div align="center">
-  <img src="assets/Web1.png" alt="BirdBase Web Interface 1" width="48.5%">
-  <img src="assets/Web2.png" alt="BirdBase Web Interface 2" width="48.5%">
+  <img src="Assets/Web1.png" alt="BirdBase Web Interface 1" width="48.5%">
+  <img src="Assets/Web2.png" alt="BirdBase Web Interface 2" width="48.5%">
 </div>
 
 ---
